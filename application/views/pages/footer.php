@@ -20,8 +20,7 @@
               <i class="fa fa-phone"></i></a>
  
             <a class="btn btn-success" href="tel:+919354363673">
-              
-              <i class="fab fa-whatsapp"></i></a>
+                          <i class="fab fa-whatsapp"></i></a>
             <a class="btn btn-info" href="mailto:vaishalivk48@gmail.com"><i class="fa fa-envelope"></i></a>
           </div>
         </div>
@@ -43,9 +42,14 @@
     </div>
   </footer>
 <!-- END: FOOTER -->
+<script src="<?= base_url("Assets\Js\jquery.min.js")?>"></script>
 <script src="<?= base_url("Assets\Js\bootstrap.min.js")?>"> </script>
-<script src="<?= base_url("Assets\Js\all.js")?>"> </script>
-<script src="<?= base_url("Assets\Js\holder.min.js")?>"> </script>
 <script src="<?= base_url("Assets\Js\popper.min.js")?>"> </script>
+<script src="<?= base_url("Assets\Js\all.js")?>"> </script>
+<script src="<?= base_url("Assets\Js\jquery.validate.min.js")?>"> </script>
+<script src="<?= base_url("Assets\Js\holder.min.js")?>"> </script>
+<script src="<?= base_url("Assets\Js\insert.js")?>"> </script>
+<script src="<?= base_url("Assets\Js\sweet.js")?>"> </script>
+
 </body>
 </html>

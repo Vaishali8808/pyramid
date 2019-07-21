@@ -7,13 +7,13 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="Assets\images\1.png" class="d-block w-100 image-fluid " alt="Carousel Image 1">
+        <img src="<?=base_url()?>Assets\images\1.png" class="d-block w-100 image-fluid " alt="Carousel Image 1">
       </div>
       <div class="carousel-item">
-        <img src="Assets\images\2.png" class="d-block w-100 image-fluid" alt="Carousel Image 2">
+        <img src="<?=base_url()?>Assets\images\2.png" class="d-block w-100 image-fluid" alt="Carousel Image 2">
       </div>
       <div class="carousel-item">
-        <img src="Assets\images\3.png" class="d-block w-100 image-fluid" alt="Carousel Image 3">
+        <img src="<?=base_url()?>Assets\images\3.png" class="d-block w-100 image-fluid" alt="Carousel Image 3">
       </div>
     </div>
     <a class="carousel-control-prev" href="#top_carousel" role="button" data-slide="prev">
@@ -67,7 +67,7 @@
     <hr class="featurette-divider">
     <!-- START THE FEATURETTES -->
 
-    <div class="row content-row featurette">
+    <div class="row content-row featurette ">
       <div class="col-md-7">
         <h2 class="featurette-heading">The goal isn’t to build a website...
            <span class="text-muted">The goal is to build your business.</span>
@@ -76,7 +76,7 @@
           a social media page or a combination of all three, getting your company online will reap major benefits.</p>
       </div>
       <div class="col-md-5">
-        <img src="Assets\images\1 (1).png" class="d-block w-100" alt="Image 1">
+        <img src="<?=base_url()?>Assets\images\1 (1).png" class="d-block w-100" alt="Image 1">
       </div>
     </div>
 
@@ -95,7 +95,7 @@
   </p>
       </div>
       <div class="col-md-5 order-md-1">
-        <img src="Assets\images\2 (1).png" class="d-block w-100" alt="Image 1">
+        <img src="<?=base_url()?>Assets\images\2 (1).png" class="d-block w-100" alt="Image 1">
       </div>
     </div>
 
@@ -111,7 +111,7 @@
           design or just help with a better UX? We can help you with that - we do web apps development.</p>
       </div>
       <div class="col-md-5">
-        <img src="Assets\images\3 (1).png" class="d-block w-100" alt="Image 1">
+        <img src="<?=base_url()?>Assets\images\3 (1).png" class="d-block w-100" alt="Image 1">
       </div>
     </div>
 
