@@ -1,12 +1,9 @@
-
-
 <div class="container m-top ">
       <div class="row justify-content-between">
         <div class="col-md-4">
             <h1 class="my-5 text-danger">
               Contact Us
             </h1>
-          
             <?php  
             $insert_data=array('id'=>'add');
             echo form_open('Admin/insert',$insert_data); ?>
