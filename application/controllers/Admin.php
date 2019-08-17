@@ -5,7 +5,6 @@ class Admin extends CI_Controller
     {
         parent::__construct();
         $this->load->helper('url');
-        $this->load->library('email');
     }
     public function index()
     {   
@@ -19,12 +18,7 @@ class Admin extends CI_Controller
     $this->load->view('pages/blog');
     $this->load->view('pages/footer');
     }
-    public function contact()
-    {
-         $this->load->view('pages/header');
-        $this->load->view('pages/contact');
-        $this->load->view('pages/footer');
-    }
+    
     public function about()
     {
     $this->load->view('pages/header');
@@ -56,5 +50,35 @@ class Admin extends CI_Controller
         echo false ;
          }
     }
+
+    public function contact()
+    {
+         $this->load->view('pages/header');
+        $this->load->view('pages/contact');
+        $this->load->view('pages/footer');
+    }
+   public function send() {
+        $this->load->library('email');
+        
+        $from = "vaishalivk48@gmail.com";
+
+        $to = $this->input->post('vaishalivk48@gmail.com');  //getting to from form
+        $subject = "Application for Programmer Registration by -".$this->input->post('fname'); //getting from form
+        $message = $this->input->post('comment'); // getting message from form
+
+        $this->email->set_newline("\r\n");
+        $this->email->from($from);
+        $this->email->to($to);
+        $this->email->subject($subject);
+        $this->email->message($message);
+
+        if ($this->email->send()) {
+            echo 'Your Email has successfully been sent.';
+        } else {
+            show_error($this->email->print_debugger());
+        }
+    }
+
+
 }
 ?>
